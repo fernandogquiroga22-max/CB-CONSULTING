@@ -330,8 +330,8 @@ body::before {
   z-index: 2; animation: fadeUp .8s .6s ease both;
 }
 .hero-stats > div { display: flex; flex-direction: column; gap: 4px; }
-.hstat-n { font-family: var(--font-display); font-size: 2.2rem; letter-spacing: .04em; color: var(--blue-bright); }
-.hstat-l { font-family: var(--font-condensed); font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
+.hstat-n { font-family: var(--font-display); font-size: 3rem; letter-spacing: .04em; color: var(--blue-bright); }
+.hstat-l { font-family: var(--font-condensed); font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-top:4px; }
 
 /* ---------- SECTIONS ---------- */
 .wrap { padding: 80px 40px; max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
@@ -1416,7 +1416,7 @@ const CD={
 "CHH":{c:["Juárez Cartel","Sinaloa"],n:"Ongoing territorial dispute. Ciudad Juárez remains high-homicide. Rural areas carry elevated risk.",ci:["Ciudad Juárez","Chihuahua City","Creel"],b:true,bn:"Ciudad Juárez–El Paso is one of the most active commercial ports of entry on the border."},
 "COA":{c:["CDN"],n:"CDN maintains influence in border municipalities. Saltillo and Torreón have experienced cartel violence.",ci:["Saltillo","Torreón","Piedras Negras","Acuña"],b:true,bn:"Shares border with Texas. Piedras Negras and Acuña are active commercial crossings."},
 "NLE":{c:["CDN","CJNG"],n:"CDN significant presence outside Monterrey metro. CJNG expanding. Critical industrial hub. Corporate security protocols strongly advised.",ci:["Monterrey","San Nicolás","Apodaca","Linares"],b:true,bn:"Critical corridor for maquiladora operations. Proximity to Tamaulipas border zone."},
-"TAM":{c:["CDN (Cartel del Noreste)","Gulf Cartel factions"],n:"HIGH PRIORITY — Frequent CDN vs Gulf Cartel conflict. Elevated kidnapping and extortion risk. U.S. consulate operations restricted. Level 4 Do Not Travel.",ci:["Nuevo Laredo","Reynosa","Matamoros","Tampico"],b:true,bn:"Contains 3 of the highest-volume U.S.–Mexico commercial crossings. Critical freight corridor for Texas trade."},
+"TAM":{c:["CDN — Nuevo Laredo plaza (north)","Gulf Cartel CDG — Reynosa / Matamoros / South"],n:"HIGH PRIORITY — Split territorial control. CDN controls Nuevo Laredo and northern corridor. Gulf Cartel (CDG) dominates Reynosa, Matamoros and southern Tamaulipas. Active inter-cartel conflict along boundary zones. Elevated kidnapping and extortion risk statewide. Level 4 Do Not Travel.",ci:["Nuevo Laredo (CDN)","Reynosa (Gulf)","Matamoros (Gulf)","Tampico"],b:true,bn:"Contains 3 of the highest-volume U.S.–Mexico commercial crossings. Critical freight corridor for Texas trade."},
 "SIN":{c:["Sinaloa Cartel"],n:"Home base of the Sinaloa Cartel. Internal faction conflict following leadership arrests. Armed confrontations common.",ci:["Culiacán","Mazatlán","Los Mochis"],b:false,bn:""},
 "DUR":{c:["Sinaloa"],n:"Sinaloa influence in rural Sierra Madre areas. Urban areas comparatively lower risk.",ci:["Durango City","Gómez Palacio","Lerdo"],b:false,bn:""},
 "ZAC":{c:["CJNG","Sinaloa"],n:"Active conflict zone. CJNG vs Sinaloa. Significant violence increase. Road ambushes reported.",ci:["Zacatecas City","Fresnillo"],b:false,bn:""},
@@ -1473,10 +1473,13 @@ ENP:{f:"#0F3D20",h:"#186030",l:"Normal Precautions",c:"#50D090",bg:"rgba(15,61,3
 const CITIES=[
   {name:"Nuevo Laredo",lon:-99.51,lat:27.48},
   {name:"Monterrey",lon:-100.32,lat:25.68},
-  {name:"Puerto Vallarta",lon:-105.23,lat:20.61},
+  {name:"Matamoros",lon:-97.50,lat:25.87},
+  {name:"Reynosa",lon:-98.29,lat:26.08},
+  {name:"Mexico City",lon:-99.13,lat:19.43},
   {name:"Cancún",lon:-86.85,lat:21.16},
-  {name:"Cabo San Lucas",lon:-109.91,lat:22.89},
   {name:"Tijuana",lon:-117.04,lat:32.53},
+  {name:"Culiacán",lon:-107.39,lat:24.80},
+  {name:"Juárez",lon:-106.42,lat:31.73},
 ];
 
 let _zoom,_svg,aR='ALL',aC='ALL';
@@ -1780,3 +1783,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
+
