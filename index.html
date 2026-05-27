@@ -1600,7 +1600,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <script>
-const CD={
+var CD={
 "BCN":{c:["Sinaloa","CJNG","Arellano Felix remnants"],n:"Multiple factions compete for Tijuana. Tourist zones in Ensenada generally lower risk.",ci:["Tijuana","Mexicali","Ensenada","Rosarito"],b:true,bn:"Tijuana–San Diego is the world's busiest international border crossing."},
 "BCS":{c:[],n:"Lower crime rates than northern Baja. Los Cabos is a major tourism destination with good security infrastructure.",ci:["La Paz","Cabo San Lucas","Todos Santos"],b:false,bn:""},
 "SON":{c:["Sinaloa","Caborca-linked"],n:"Sinaloa Cartel presence throughout. Nogales crossing area has seen targeted violence.",ci:["Hermosillo","Nogales","Puerto Peñasco"],b:true,bn:"Key commercial crossing at Nogales. High drug trafficking along the Sonoran corridor."},
@@ -1634,14 +1634,14 @@ const CD={
 "PUE":{c:["CJNG","SRLC"],n:"CJNG expanding presence. Fuel theft significant in northern zones. Routes toward Guerrero carry elevated risk.",ci:["Puebla City","Tehuacán","Cholula"],b:false,bn:""},
 "MOR":{c:["CJNG","Guerreros Unidos"],n:"Proximity to Guerrero creates spillover risk. CJNG presence documented. Cuernavaca has seen targeted cartel violence.",ci:["Cuernavaca","Cuautla"],b:false,bn:""},
 };
-const RISK={
+var RISK={
 "BCN":"RCT","BCS":"ENP","SON":"RCT","CHH":"RCT","COA":"RCT","NLE":"RCT","TAM":"DNT",
 "SIN":"DNT","DUR":"EIC","ZAC":"DNT","SLP":"RCT","NAY":"EIC","JAL":"RCT","AGU":"EIC",
 "COL":"DNT","MIC":"DNT","GRO":"DNT","VER":"RCT","OAX":"EIC","TAB":"EIC","CHP":"RCT",
 "YUC":"ENP","CAM":"ENP","ROO":"EIC","GUA":"RCT","QUE":"ENP","HID":"EIC","MEX":"EIC",
 "CMX":"EIC","TLA":"ENP","PUE":"EIC","MOR":"EIC"
 };
-const NM={
+var NM={
 "Baja California":"BCN","Baja California Sur":"BCS","Sonora":"SON","Chihuahua":"CHH",
 "Coahuila":"COA","Coahuila de Zaragoza":"COA","Nuevo León":"NLE","Nuevo Leon":"NLE",
 "Tamaulipas":"TAM","Sinaloa":"SIN","Durango":"DUR","Zacatecas":"ZAC",
@@ -1654,7 +1654,7 @@ const NM={
 "México":"MEX","Mexico":"MEX","Ciudad de México":"CMX","Ciudad de Mexico":"CMX",
 "Tlaxcala":"TLA","Puebla":"PUE","Morelos":"MOR"
 };
-const RC={
+var RC={
 DNT:{f:"#7A1515",h:"#B02020",l:"Do Not Travel",c:"#FF6B6B",bg:"rgba(122,21,21,.25)",bd:"rgba(192,57,43,.5)"},
 RCT:{f:"#6B3A0A",h:"#9A5510",l:"Reconsider Travel",c:"#FFA040",bg:"rgba(107,58,10,.25)",bd:"rgba(180,100,20,.5)"},
 EIC:{f:"#4A4010",h:"#7A6A15",l:"Exercise Caution",c:"#FFD060",bg:"rgba(74,64,16,.25)",bd:"rgba(160,140,20,.5)"},
